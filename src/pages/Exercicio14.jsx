@@ -1,5 +1,3 @@
-import Card from "../components/Card";
-
 export default function Exercicio14() {
   let produtos = [
     { nome: "Mesa", preco: 120 },
@@ -10,10 +8,6 @@ export default function Exercicio14() {
   return (
     <>
       <h2>Exercício 14</h2>
-
-      {produtos.map((produto, index) => (
-        <Card key={index} titulo={produto.nome} preco={produto.preco} />
-      ))}
     </>
   );
 }
