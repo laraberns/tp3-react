@@ -1,24 +1,34 @@
-export default function Exercicio6() {
-  let livro = {
-    titulo: "A vida é boa",
-    autor: "Pedro Cabral",
-    ano: 2010,
-  };
+import BoletimAluno from "../components/BoletimAluno";
 
-  let capitulos = [1, 2, 3, 4, 5];
+export default function Exercicio6() {
+  let aluno = {
+    nome: "Lara Pereira",
+
+    matricula: "2023101234",
+
+    responsavel: "Mariana Pereira",
+
+    disciplinas: [
+      {
+        nome: "Matemática",
+
+        docente: "João Silva",
+
+        notas: [
+          {
+            prova: "Prova 1",
+
+            nota: 8.5,
+          },
+        ],
+      },
+    ],
+  };
 
   return (
     <>
       <h2>Exercício 6</h2>
-      <p>Nome do livro: {livro.titulo}</p>
-      <p>Autor do livro: {livro.autor}</p>
-      <p>Ano do livro: {livro.ano}</p>
-
-      <ul>
-        {capitulos.map((capitulo, index) => (
-          <li key={index}>{capitulo}</li>
-        ))}
-      </ul>
+      <BoletimAluno aluno={aluno} />
     </>
   );
 }
