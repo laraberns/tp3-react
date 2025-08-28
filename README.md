@@ -1,4 +1,4 @@
-# Teste de Performance - TP2 [React]
+# Teste de Performance - TP3 [React]
 
 Neste projeto vamos criar um dashboard simples para uma plataforma de
 conteúdos, para isso, execute as tarefas a seguir:
