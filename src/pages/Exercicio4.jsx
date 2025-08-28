@@ -1,11 +1,16 @@
+import Dados from "../components/Dados";
+
 export default function Exercicio4() {
-  let nome = "Lara";
-  const idade = 26;
+  let dados = {
+    titulo: "Dados Pessoais",
+    mensagem: "Olá, meu nome é Lara Pereira. Sou estudante de React.",
+    tipo: "Sucesso",
+  };
+
   return (
     <>
       <h2>Exercício 4</h2>
-      <p>Nome: {nome}</p>
-      <p>Idade: {idade}</p>
+      <Dados dados={dados} />
     </>
   );
 }
